@@ -60,3 +60,10 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+.quote-submission-wrapper{
+	:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	}
+}

@@ -256,9 +256,10 @@ body,
 button,
 input,
 select,
-textarea {
-  color: #0c0;
-  font-family: sans-serif;
+textarea,
+p {
+  color: #fff;
+  font-family: Exo, sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -320,7 +321,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: pink;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -430,14 +431,23 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.quote-submission-wrapper :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #00cc00; }
   a:visited {
-    color: purple; }
+    color: #00cc00; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -575,9 +585,12 @@ a {
 --------------------------------------------------------------*/
 /* Posts and pages */
 .blog, .page-template-default, .hfeed-site {
-  text-align: center;
+  text-align: left;
   background-color: #222222;
   padding: 2.5%; }
+  .blog a, .page-template-default a, .hfeed-site a {
+    text-decoration: none;
+    font-family: Exo, sans-serif; }
 
 .sticky {
   display: block; }
@@ -628,25 +641,49 @@ object {
 /* Submit a Quote Page */
 .blog .new-quote-button {
   background-color: transparent;
-  border: 2px solid #0c0;
-  border-radius: 3px;
-  color: #0c0;
-  font-weight: 700;
+  border: 2px solid #00cc00;
+  color: #00cc00;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  padding: .75rem 2.25rem;
+  border-radius: 3px;
   width: 15rem;
   height: 3rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .75rem 2.25rem; }
+
+.blog .nav-links {
+  display: none; }
 
 @media all and (min-width: 1080px) {
   .new-quote-button {
     font-size: 1.25rem; } }
 
+.page .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  padding: 0;
+  margin: 0 0 0 1rem; }
+
+.page .menu li a {
+  text-decoration: none;
+  padding-right: 1rem; }
+
 .home .site-content, .home .footer-note-wrapper {
   text-align: left;
   margin-left: 1rem; }
+  .home .site-content .footer-note, .home .footer-note-wrapper .footer-note {
+    padding-right: .3rem; }
+
+.home .site-footer {
+  margin-top: 4rem; }
 
 .home .menu ul {
   display: -webkit-box;
@@ -661,4 +698,5 @@ object {
   margin: 0 0 0 1rem; }
 
 .home .menu li a {
-  text-decoration: none; }
+  text-decoration: none;
+  padding-right: 1rem; }

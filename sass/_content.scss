@@ -4,9 +4,13 @@
 
 /* Posts and pages */
 .blog, .page-template-default, .hfeed-site {
-	text-align: center;
+	text-align: left;
 	background-color: $color__background-color;  
 	padding: 2.5%;
+	a {
+		text-decoration: none;
+		font-family: $font__main;
+	}
 }
 
 .sticky {

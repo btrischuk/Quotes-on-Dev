@@ -1,9 +1,13 @@
 .home  {
   .site-content, .footer-note-wrapper {
     text-align: left;
-    margin-left: 1rem;
- 
-    
+    margin-left: 1rem;   
+    .footer-note {
+      padding-right: .3rem;
+    }
+  }
+  .site-footer{
+    margin-top: 4rem;
   }
   .menu {
     ul {
@@ -15,6 +19,7 @@
     }
     li a {
       text-decoration: none;     
+      padding-right: 1rem;
        
     }
   }

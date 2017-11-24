@@ -1,22 +1,25 @@
 .blog {
- 
-
-.new-quote-button {
-  background-color: $color__background-transparent;
-  border: $color__border-green;
-  border-radius: 3px;
-  color: $color__text-main;
-  font-weight: 700;
-  box-shadow: none;
-  text-shadow: none;
-  padding: .75rem 2.25rem;
-  width: 15rem;
-  height: 3rem;
-  font-size: 1rem;
+  
 
 
+  .new-quote-button {
+    background-color: $color__background-transparent;
+    border: $color__border-green;
+    color: $color__text-brand;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 3px;  
+    width: 15rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 700;  
+    padding: .75rem 2.25rem;
 
-}
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
 
 @media all and (min-width: 1080px) {
