@@ -38,7 +38,19 @@ ul, ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	li {
+		margin-right: 20px;
+		margin-bottom: 3px;
+		font-family: $font__main;
+		font-weight: 100;
+	}
+
 }
 
 ol {
