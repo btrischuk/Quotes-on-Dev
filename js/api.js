@@ -13,14 +13,14 @@
       })
       .done( function(data) {
 
+          var slug = data[0].slug;
           var post = data.shift(); // The data is an array of posts. Grab the first one.
-          // history.pushState
+            
           $( '#quote-title' ).text( post.title.rendered );
           $( '#quote-content' ).html( post.content.rendered );
-
-
-
-
+          // $( '#quote-content' ).html( post.content.rendered );
+          
+          $( '.hentry' ).append( history.pushState(null, null, slug) );
 
           if (data._qod_quote_source){
           $('.source').html('<a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>');

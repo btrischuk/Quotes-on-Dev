@@ -6,6 +6,8 @@
 
 a {
 	color: $color__text-brand;
+	text-decoration: none;
+	font-weight: 100;
 
 	&:visited {
 		color: $color__text-brand;
@@ -31,9 +33,28 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	margin-bottom: 1rem;
+	.menu {
+		li {
+		border-right: 1px solid white;
+		line-height: 1;
+		}
+		li:nth-child(1){
+			padding-right: 10px;
+			// line-height: .5rem;
+			
+		} 
+		li:nth-child(2){
+			padding-right: 10px;
 
+		}
+	
+		li:nth-child(3){
+			border: none;
+		}
+	}
 	ul {
-		display: none;
+		// display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -126,8 +147,6 @@ a {
 	}
 
 	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
+		display: none;
 	}
 }
