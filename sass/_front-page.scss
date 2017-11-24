@@ -1,4 +1,26 @@
 .blog {
-  // background-color: blue;  
-    
+     
+
+.new-quote-button {
+  background-color: $color__background-transparent;
+  border: $color__border-green;
+  border-radius: 3px;
+  color: $color__text-main;
+  font-weight: 700;
+  box-shadow: none;
+  text-shadow: none;
+  padding: .75rem 2.25rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1rem;
+
+
+
+}
+}
+
+@media all and (min-width: 1080px) {
+  .new-quote-button {
+    font-size: 1.25rem;
+  } 
 }

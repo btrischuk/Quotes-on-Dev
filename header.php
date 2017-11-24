@@ -28,8 +28,12 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+				
+				<div class="logo">
+					<img src=<?php echo get_template_directory_uri() . '/qod-logo.svg' ?> alt="Quote on Dev Logo"<?php ?>>
+				</div>
+

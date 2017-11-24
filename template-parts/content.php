@@ -11,19 +11,19 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post"<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-	<div class="entry-content">
-		<?php the_content(); ?>
+	<div id="quote-content" class="entry-content">
+		<?php the_content('<p id="quote-content" class="entry-content">&mdash; ', '</p>'); ?>
 	</div><!-- .entry-content -->
 
-	<div class="entry-key">
-		<?php the_title( '<h2 class="entry-title">&mdash; ', '</h2>');  ?>
+	<div id="quote-title" class="entry-key">
+		<?php the_title( '<h2 id="quote-title" class="entry-title">&mdash; ', '</h2>');  ?>
 
 		<?php if( $source && $source_url ): ?>
 			<span class="source">, <a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
-
+			
 			<?php elseif( $source ): ?>
 
 			<span class="source">, <?php echo $source; ?> </span>
@@ -37,7 +37,8 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true);
 
 </article><!-- #post-## -->
 
-
 <?php if(is_home() || is_single() ): ?>
-	<button type="button" id="new-quote-button">Show Me Another!</button>
+	<button type="button" id="new-quote-button" class="new-quote-button">Show Me Another!</button>
 <?php endif; ?>
+
+<?php get_footer(); ?>

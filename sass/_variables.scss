@@ -4,8 +4,9 @@ $base__space-unit: 1.5rem;
 
 // Colors
 
+$color__background-transparent: transparent;
 $color__background-body: #fff;
-$color__text-main: #1fca23;
+$color__text-main: #0c0;
 $color__background-color: #222222;
 // #404040
 $color__background-screen: #f1f1f1;
@@ -20,6 +21,9 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+//border
+$color__border-green: 2px solid #0c0;
+
 // Typography
 
 $font__main: sans-serif;
@@ -27,3 +31,4 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+

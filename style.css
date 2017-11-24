@@ -229,7 +229,7 @@ button,
 input,
 select,
 textarea {
-  color: #1fca23;
+  color: #0c0;
   font-family: sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
@@ -593,3 +593,39 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.blog .new-quote-button {
+  background-color: transparent;
+  border: 2px solid #0c0;
+  border-radius: 3px;
+  color: #0c0;
+  font-weight: 700;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  padding: .75rem 2.25rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1rem; }
+
+@media all and (min-width: 1080px) {
+  .new-quote-button {
+    font-size: 1.25rem; } }
+
+.home .site-content, .home .footer-note-wrapper {
+  text-align: left;
+  margin-left: 1rem; }
+
+.home .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  padding: 0;
+  margin: 0 0 0 1rem; }
+
+.home .menu li a {
+  text-decoration: none; }
