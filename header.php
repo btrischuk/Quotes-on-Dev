@@ -34,6 +34,6 @@
 			<div id="content" class="site-content">
 				
 				<div class="logo">
-					<img src=<?php echo get_template_directory_uri() . '/qod-logo.svg' ?> alt="Quote on Dev Logo"<?php ?>>
+				<a href="<?php echo get_home_url(); ?>"><img src=<?php echo get_template_directory_uri() . '/qod-logo.svg' ?> alt="Quote on Dev Logo"<?php ?>></a>
 				</div>
 

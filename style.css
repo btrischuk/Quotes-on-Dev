@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-MediumItalic.eot");
+  src: url("../../fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-MediumItalic.woff") format("woff"), url("../../fonts/Exo-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-LightItalic.eot");
+  src: url("../../fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-LightItalic.woff") format("woff"), url("../../fonts/Exo-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Medium.eot");
+  src: url("../../fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Medium.woff") format("woff"), url("../../fonts/Exo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo';
+  src: url("../../fonts/Exo-Light.eot");
+  src: url("../../fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Light.woff") format("woff"), url("../../fonts/Exo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -457,7 +485,8 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: block;
+  display: none; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -547,7 +576,8 @@ a {
 /* Posts and pages */
 .blog, .page-template-default, .hfeed-site {
   text-align: center;
-  background-color: #222222; }
+  background-color: #222222;
+  padding: 2.5%; }
 
 .sticky {
   display: block; }
@@ -570,6 +600,9 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.site-description {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Media
