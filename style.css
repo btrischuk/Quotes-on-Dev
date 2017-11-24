@@ -628,6 +628,30 @@ a {
 .site-description {
   display: none; }
 
+.site-content {
+  position: relative; }
+
+@media (min-width: 1080px) {
+  .site-content:before, .site-content:after {
+    font-size: 200px;
+    position: absolute;
+    font-family: 'FontAwesome'; }
+  .site-content:before {
+    content: '\f10d';
+    left: -22rem;
+    color: #00cc00; }
+  .site-content:after {
+    content: '\f10e';
+    right: -20rem;
+    top: 0;
+    color: #00cc00; }
+  .logo {
+    width: 400px;
+    margin: 0 auto; }
+  .page {
+    width: 400px;
+    margin: 0 auto; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

@@ -18,10 +18,10 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-			<?php endif; ?>
-
-			<p class="tag-display"><?php single_tag_title( "tag: "); ?></p>
-
+      <?php endif; ?>
+      
+      <p class="tag-display"><?php single_cat_title( "category: "); ?></p>
+      
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
