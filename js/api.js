@@ -4,8 +4,8 @@
     $( '.new-quote-button' ).on( 'click', function (e) {
       e.preventDefault();
       
-      $('#quote-content').empty();  
-      $('#quote-title').empty();
+      // $('#quote-content').empty();  
+      // $('#quote-title').empty();
 
       $.ajax( {
         method: 'GET',
@@ -23,14 +23,13 @@
           $( '.hentry' ).append( history.pushState(null, null, slug) );
 
           if (data._qod_quote_source){
-          $('.source').html('<a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>');
+            $('.source').html('<a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>');
           }
-
-          // .fail
-          //     console.log(post);
-          // });
+          
+        }).fail(function() {
+          return 'The submission can not be precessed. Try harder next time!';
+          
         });
-      
       });
       
 //submit new post
