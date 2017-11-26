@@ -1,7 +1,4 @@
 .blog {
-  
-
-
   .new-quote-button {
     background-color: $color__background-transparent;
     border: $color__border-green;
@@ -14,7 +11,6 @@
     font-size: 1rem;
     font-weight: 700;  
     padding: .75rem 2.25rem;
-
   }
 
   .nav-links {
@@ -26,4 +22,8 @@
   .new-quote-button {
     font-size: 1.25rem;
   } 
+  .site-navigation {
+      width: 600px;
+      margin: 0 auto;  
+    }
 }

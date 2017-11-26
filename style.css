@@ -196,7 +196,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: none;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -318,7 +318,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1rem;
-  padding: 2.5%; }
+  padding: 2.5%;
+  max-width: 1080px;
+  margin: 0 auto; }
 
 *,
 *:before,
@@ -413,12 +415,12 @@ input[type="password"],
 input[type="search"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
+  border: 2px solid #00cc00;
   border-radius: 3px;
   border: 2px solid #00cc00;
   background-color: transparent;
   padding-left: 3px;
-  width: 100%; }
+  width: 250px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -641,7 +643,7 @@ a {
 
 @media (min-width: 1080px) {
   .home:before, .home:after, .site-content:before, .site-content:after {
-    font-size: 200px;
+    font-size: 125px;
     position: absolute;
     font-family: 'FontAwesome'; }
   .home:before, .site-content:before {
@@ -701,7 +703,10 @@ object {
 
 @media all and (min-width: 1080px) {
   .new-quote-button {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .site-navigation {
+    width: 600px;
+    margin: 0 auto; } }
 
 .page {
   padding: 2.5%; }
@@ -751,3 +756,15 @@ object {
 footer li a {
   text-decoration: none;
   padding-right: 1rem; }
+
+.error404 .search-submit {
+  border: none;
+  width: 5px;
+  padding: 5px; }
+
+.error404 .fa {
+  font-size: 20px; }
+
+@media (min-width: 620px) {
+  .error404 .search-field {
+    font-size: 1.3rem; } }

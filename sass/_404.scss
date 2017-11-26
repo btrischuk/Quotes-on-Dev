@@ -1,0 +1,18 @@
+.error404 {
+  .search-submit {
+    border: none;
+    width: 5px;
+    padding: 5px;      
+  }
+  .fa  {
+    font-size: 20px;
+  }
+}
+
+@include tablet {
+  .error404 {
+    .search-field {
+    font-size: 1.3rem;
+    }
+  }
+}

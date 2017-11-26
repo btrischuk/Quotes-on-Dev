@@ -41,13 +41,12 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border: 1px solid #ccc;
+	border: $color__border-green;
 	border-radius: 3px;
 	border: $color__border-green;
 	background-color: $color__background-transparent;
 	padding-left: 3px;
-	width: 100%;
-	
+	width: 250px;	
 
 	&:focus {
 		color: $color__text-white;
