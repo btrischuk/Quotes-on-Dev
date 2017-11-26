@@ -1,11 +1,11 @@
 .page {
+  padding: 2.5%;
   .menu{
     ul {
       display: flex;
       list-style: none;
       flex-direction: flex-start;
       padding: 0;
-      margin: 0 0 0 1rem;
     }
     li a {
       text-decoration: none;     

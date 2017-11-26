@@ -4,25 +4,36 @@
 
 /* Posts and pages */
 
+
+
 .blog, .page-template-default, .hfeed-site {
 	text-align: left;
 	background-color: $color__background-color;  
-	padding: 2.5%;
+	// padding: 2.5%;
 	a {
 		text-decoration: none;
 		font-family: $font__main;
 		font-weight: 100;		
+	}
+	.entry-meta {
+		margin-bottom: 2rem;
 	}
 }
 
 .sticky {
 	display: block;
 }
-
-.hentry {
+.archive {
+	.hentry {
 	margin: 0 0 $base__space-unit;
-}
+	border-bottom: $color__border-dashed-white;
+	}
 
+	.tag-display {
+	border-bottom: $color__border-dashed-white;
+	
+	}
+}
 .updated:not(.published){
 	display: none;
 }
@@ -54,7 +65,7 @@
 
 
 @include desktop {
-	.site-content { 
+	.home,.site-content { 
 	&:before,
 	&:after {
 

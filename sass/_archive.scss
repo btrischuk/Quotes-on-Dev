@@ -1,4 +1,18 @@
-.archive.category {
+.archive {
+  .site-content {
   padding: 2.5%;
+  }
+}
+  .site-main{
+  article .post {
+    border-bottom: 1px solid white;
+  }
+}
 
+
+footer {
+ li a {
+  text-decoration: none;     
+  padding-right: 1rem;
+  }
 }

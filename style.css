@@ -268,8 +268,14 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
+.tag-display {
+  font-size: 2rem;
+  padding-bottom: 2rem; }
+
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: Exo, sans-serif;
+  font-weight: 100; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -311,7 +317,8 @@ big {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding: 2.5%; }
 
 *,
 *:before,
@@ -396,7 +403,7 @@ input[type="submit"] {
   padding: .75rem 2.25rem;
   width: 15rem;
   height: 3rem;
-  margin-bottom: 3rem; }
+  margin: 3rem 0; }
 
 /* Fields */
 input[type="text"],
@@ -468,10 +475,6 @@ a {
   .main-navigation .menu li {
     border-right: 1px solid white;
     line-height: 1; }
-  .main-navigation .menu li:nth-child(1) {
-    padding-right: 10px; }
-  .main-navigation .menu li:nth-child(2) {
-    padding-right: 10px; }
   .main-navigation .menu li:nth-child(3) {
     border: none; }
   .main-navigation ul {
@@ -596,18 +599,23 @@ a {
 /* Posts and pages */
 .blog, .page-template-default, .hfeed-site {
   text-align: left;
-  background-color: #222222;
-  padding: 2.5%; }
+  background-color: #222222; }
   .blog a, .page-template-default a, .hfeed-site a {
     text-decoration: none;
     font-family: Exo, sans-serif;
     font-weight: 100; }
+  .blog .entry-meta, .page-template-default .entry-meta, .hfeed-site .entry-meta {
+    margin-bottom: 2rem; }
 
 .sticky {
   display: block; }
 
-.hentry {
-  margin: 0 0 1.5rem; }
+.archive .hentry {
+  margin: 0 0 1.5rem;
+  border-bottom: 1px dashed #ffffff; }
+
+.archive .tag-display {
+  border-bottom: 1px dashed #ffffff; }
 
 .updated:not(.published) {
   display: none; }
@@ -632,15 +640,15 @@ a {
   position: relative; }
 
 @media (min-width: 1080px) {
-  .site-content:before, .site-content:after {
+  .home:before, .home:after, .site-content:before, .site-content:after {
     font-size: 200px;
     position: absolute;
     font-family: 'FontAwesome'; }
-  .site-content:before {
+  .home:before, .site-content:before {
     content: '\f10d';
     left: -22rem;
     color: #00cc00; }
-  .site-content:after {
+  .home:after, .site-content:after {
     content: '\f10e';
     right: -20rem;
     top: 0;
@@ -695,25 +703,24 @@ object {
   .new-quote-button {
     font-size: 1.25rem; } }
 
-.page .menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-start;
-          flex-direction: flex-start;
-  padding: 0;
-  margin: 0 0 0 1rem; }
-
-.page .menu li a {
-  text-decoration: none;
-  padding-right: 1rem; }
+.page {
+  padding: 2.5%; }
+  .page .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-start;
+            flex-direction: flex-start;
+    padding: 0; }
+  .page .menu li a {
+    text-decoration: none;
+    padding-right: 1rem; }
 
 .home .site-content, .home .footer-note-wrapper {
-  text-align: left;
-  margin-left: 1rem; }
+  text-align: left; }
   .home .site-content .footer-note, .home .footer-note-wrapper .footer-note {
     padding-right: .3rem; }
 
@@ -732,5 +739,15 @@ object {
   text-decoration: none;
   padding-right: 1rem; }
 
-.archive.category {
+.footer-note {
+  padding-right: .5rem; }
+
+.archive .site-content {
   padding: 2.5%; }
+
+.site-main article .post {
+  border-bottom: 1px solid white; }
+
+footer li a {
+  text-decoration: none;
+  padding-right: 1rem; }

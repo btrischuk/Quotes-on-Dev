@@ -22,8 +22,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 
+.tag-display {
+	font-size: 2rem;
+	padding-bottom: 2rem;
+}
+
 p {
 	margin-bottom: $base__space-unit;
+	font-family: $font__main;
+	font-weight: 100;
 }
 
 dfn, cite, em, i {
