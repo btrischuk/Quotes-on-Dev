@@ -1,6 +1,42 @@
+![Screen Shot Quotes on Dev](../quotes-on-dev-screenshot.png "Quotes on Dev")
+
+
 # Quotes on Dev Starter
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+
+##Description
+Quotes on Dev is a webpage that incorporates JavaScript and WordPress to pull information using the Wordpress REST API to generate quotes.
+
+## The Process
+During this process I felt more confident with my JavaScript and PHP skills while still being challenged.  I have become more familiar with proper folder organizational skills and an understanding of putting more effort into writing DRY code initially. 
+
+## Contributors
+
+* WDP-fall-2017 classmates
+
+* RED Academy
+
+* Rose Cass
+
+* Jim Bennett
+
+## Authors
+
+* Breckon Trischuk 
+
+
+## Technologies Used 
+- MAMP
+- PHP
+- Git/Github
+- Wordpress
+- CSS
+- SASS
+- JavaScrpt  
+- JQuery
+- Gulp
+
 
 ## Installation
 
