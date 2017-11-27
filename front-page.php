@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="site-content">
+			<!-- <div class="site-content"> -->
 
 		<?php if ( have_posts() ) : ?>
 
@@ -34,7 +34,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
     <?php endif; ?>
-</div>
+<!-- </div> -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

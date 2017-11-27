@@ -1,6 +1,7 @@
 .home {
   .site-content, .footer-note-wrapper {
     text-align: left;
+    margin-top: 0;
     // margin-left: 1rem;   
     .footer-note {
       padding-right: .3rem;
@@ -8,6 +9,7 @@
   }
   .site-footer{
     margin-top: 4rem;
+ 
   }
   .menu {
     ul {
@@ -15,7 +17,7 @@
       list-style: none;
       // flex-direction: flex-start;
       padding: 0;
-      margin: 0 0 0 1rem;
+      // margin: 0 0 0 1rem;
     }
     li a {
       text-decoration: none;     
@@ -23,6 +25,26 @@
     }
   }
 }
+.footer-note-wrapper {
+  display: inline-block;
+  margin: 0;
+}
 .footer-note {
   padding-right: .5rem;
+  font-size: 1rem;
+  
+}
+
+
+
+@include tablet {
+  footer .site-info {
+    width: 100%;
+  }
+  .footer-note-wrapper {
+    // line-height: 1;
+  }
+  .page footer {
+    margin-top: 4.5rem;
+  }
 }

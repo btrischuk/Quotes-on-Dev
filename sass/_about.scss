@@ -1,5 +1,11 @@
 .page {
   padding: 2.5%;
+  box-sizing: border-box;
+  // font-size: 1rem;
+  padding: 2.5%;
+  // width: 64%;
+  max-width: 1080px;
+  margin: 0 auto;
   .menu{
     ul {
       display: flex;

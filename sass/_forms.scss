@@ -21,13 +21,13 @@ input[type="submit"] {
 	margin: 3rem 0;
 
 	&:hover {
-		// border-color: #ccc #bbb #aaa;
+		// border-color: pink;
 		// box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 	}
 
 	&:active,
 	&:focus {
-		// border-color: #aaa #bbb #bbb;
+		// border-color: pink;
 		// box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 	}
 }
@@ -42,11 +42,17 @@ input[type="search"],
 textarea {
 	color: #666;
 	border: $color__border-green;
-	border-radius: 3px;
 	border: $color__border-green;
 	background-color: $color__background-transparent;
+	border-radius: 3px;	
 	padding-left: 3px;
 	width: 250px;	
+	@include tablet {
+		width: 500px;
+		// #quote-content textarea {
+		// 	width: 700px;
+		// }
+	}
 
 	&:focus {
 		color: $color__text-white;

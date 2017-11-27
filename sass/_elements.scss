@@ -4,10 +4,10 @@
 
 html {
 	box-sizing: border-box;
-	font-size: 1rem;
-	padding: 2.5%;
-	max-width: 1080px;
-	margin: 0 auto;
+	// font-size: 1rem;
+	// padding: 2.5%;
+	// max-width: 1080px;
+	// margin: 0 auto;
 }
 
 *,
@@ -40,6 +40,13 @@ ul, ol {
 	margin: 0 0 $base__space-unit ($base__space-unit * 2);
 }
 
+.wp-tag-cloud {
+	li a {
+		font-size: 1.25rem;
+	}
+
+}
+
 ul {
 	list-style: none;
 	width: 100%;
@@ -47,11 +54,12 @@ ul {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	li {
+	li, a {
 		margin-right: 20px;
 		margin-bottom: 3px;
 		font-family: $font__main;
 		font-weight: 100;
+		font-size: 1.25rem;
 	}
 
 }

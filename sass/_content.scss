@@ -5,7 +5,6 @@
 /* Posts and pages */
 
 
-
 .blog, .page-template-default, .hfeed-site {
 	text-align: left;
 	background-color: $color__background-color;  
@@ -62,10 +61,14 @@
 	position: relative;
 }
 
-
+@include tablet {
+	.entry-content p {
+		font-size: 1.75rem;
+	}
+}
 
 @include desktop {
-	.home,.site-content { 
+	.site-content { 
 	&:before,
 	&:after {
 
@@ -75,24 +78,26 @@
 	}
 	&:before {
 		content: '\f10d';
-		left: -22rem;
+		left: -14rem;
+		top: 8rem;
 		color: $color__text-brand;
 	}
 	&:after {
 		content: '\f10e';
-		right: -20rem;
-		top: 0;
+		right: -11rem;
+		top: 8rem;
 		color: $color__text-brand;
 	}
 	}
-
 	.logo {
-		width: 400px;
+		width: 700px;
     margin: 0 auto;
 	}
-	.page {
-		width: 400px;
+	body {
+		width: 900px;
     margin: 0 auto;
 	}
-
+	.entry-content p {
+		font-size: 2.5rem;
+	}
 }

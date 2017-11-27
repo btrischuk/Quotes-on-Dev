@@ -275,7 +275,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-bottom: 1.5rem;
   font-family: Exo, sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 1.25rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -316,11 +317,7 @@ big {
 --------------------------------------------------------------*/
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1rem;
-  padding: 2.5%;
-  max-width: 1080px;
-  margin: 0 auto; }
+          box-sizing: border-box; }
 
 *,
 *:before,
@@ -347,6 +344,9 @@ hr {
 ul, ol {
   margin: 0 0 1.5rem 3rem; }
 
+.wp-tag-cloud li a {
+  font-size: 1.25rem; }
+
 ul {
   list-style: none;
   width: 100%;
@@ -357,11 +357,12 @@ ul {
       flex-wrap: wrap;
   margin: 0;
   padding: 0; }
-  ul li {
+  ul li, ul a {
     margin-right: 20px;
     margin-bottom: 3px;
     font-family: Exo, sans-serif;
-    font-weight: 100; }
+    font-weight: 100;
+    font-size: 1.25rem; }
 
 ol {
   list-style: decimal; }
@@ -416,11 +417,19 @@ input[type="search"],
 textarea {
   color: #666;
   border: 2px solid #00cc00;
-  border-radius: 3px;
   border: 2px solid #00cc00;
   background-color: transparent;
+  border-radius: 3px;
   padding-left: 3px;
   width: 250px; }
+  @media (min-width: 620px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea {
+      width: 500px; } }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -461,7 +470,7 @@ a {
   a:visited {
     color: #00cc00; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #090; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -472,7 +481,6 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%;
   margin-bottom: 1rem; }
   .main-navigation .menu li {
     border-right: 1px solid white;
@@ -515,7 +523,7 @@ a {
   display: block;
   display: none; }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 620px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -641,26 +649,33 @@ a {
 .site-content {
   position: relative; }
 
+@media (min-width: 620px) {
+  .entry-content p {
+    font-size: 1.75rem; } }
+
 @media (min-width: 1080px) {
-  .home:before, .home:after, .site-content:before, .site-content:after {
+  .site-content:before, .site-content:after {
     font-size: 125px;
     position: absolute;
     font-family: 'FontAwesome'; }
-  .home:before, .site-content:before {
+  .site-content:before {
     content: '\f10d';
-    left: -22rem;
+    left: -14rem;
+    top: 8rem;
     color: #00cc00; }
-  .home:after, .site-content:after {
+  .site-content:after {
     content: '\f10e';
-    right: -20rem;
-    top: 0;
+    right: -11rem;
+    top: 8rem;
     color: #00cc00; }
   .logo {
-    width: 400px;
+    width: 700px;
     margin: 0 auto; }
-  .page {
-    width: 400px;
-    margin: 0 auto; } }
+  body {
+    width: 900px;
+    margin: 0 auto; }
+  .entry-content p {
+    font-size: 2.5rem; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -684,6 +699,13 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.page ul li a {
+  font-size: 1.25rem; }
+
+@media (min-width: 620px) {
+  .site-content {
+    width: 100%; } }
+
 .blog .new-quote-button {
   background-color: transparent;
   border: 2px solid #00cc00;
@@ -709,7 +731,12 @@ object {
     margin: 0 auto; } }
 
 .page {
-  padding: 2.5%; }
+  padding: 2.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2.5%;
+  max-width: 1080px;
+  margin: 0 auto; }
   .page .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -725,7 +752,8 @@ object {
     padding-right: 1rem; }
 
 .home .site-content, .home .footer-note-wrapper {
-  text-align: left; }
+  text-align: left;
+  margin-top: 0; }
   .home .site-content .footer-note, .home .footer-note-wrapper .footer-note {
     padding-right: .3rem; }
 
@@ -737,15 +765,25 @@ object {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0 0 0 1rem; }
+  padding: 0; }
 
 .home .menu li a {
   text-decoration: none;
   padding-right: 1rem; }
 
+.footer-note-wrapper {
+  display: inline-block;
+  margin: 0; }
+
 .footer-note {
-  padding-right: .5rem; }
+  padding-right: .5rem;
+  font-size: 1rem; }
+
+@media (min-width: 620px) {
+  footer .site-info {
+    width: 100%; }
+  .page footer {
+    margin-top: 4.5rem; } }
 
 .archive .site-content {
   padding: 2.5%; }
@@ -756,6 +794,15 @@ object {
 footer li a {
   text-decoration: none;
   padding-right: 1rem; }
+
+.logo img {
+  width: 300px; }
+  @media (min-width: 620px) {
+    .logo img {
+      width: 500px; } }
+  @media (min-width: 1080px) {
+    .logo img {
+      width: 700px; } }
 
 .error404 .search-submit {
   border: none;
