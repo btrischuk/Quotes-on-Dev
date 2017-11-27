@@ -1,10 +1,9 @@
-
-  .logo img {
-    width: 300px;
-    @include tablet {
-      width: 500px;
-    }
-    @include desktop {
-      width: 700px;
-    }
+.logo img {
+  width: 300px;
+  @include tablet {
+    width: 500px;
   }
+  @include desktop {
+    width: 700px;
+  }
+}

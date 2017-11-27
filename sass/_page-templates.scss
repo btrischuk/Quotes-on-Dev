@@ -6,14 +6,13 @@
 
 /* Submit a Quote Page */
 
-.page {
-  ul li a {
-  font-size: 1.25rem;
-  }
-}
-
 @include tablet {
   .site-content {
     width: 100%;
+  }
+  .page {
+    ul li a {
+    font-size: 1.25rem!important;
+    }
   }
 }

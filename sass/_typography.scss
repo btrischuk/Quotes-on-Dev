@@ -8,10 +8,11 @@ input,
 select,
 textarea, 
 p {
+	line-height: $font__line-height-body;	
 	color: $color__text-body;
 	font-family: $font__main;
 	font-size: 1rem;
-	line-height: $font__line-height-body;
+	padding: 2.5%;
 }
 
 /* Headings */
@@ -54,8 +55,8 @@ pre {
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6rem;
 	max-width: 100%;
-	overflow: auto;
 	padding: 1.6rem;
+	overflow: auto;	
 }
 
 code, kbd, tt, var {

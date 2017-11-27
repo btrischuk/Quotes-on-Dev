@@ -1,4 +1,4 @@
-![Screen Shot Quotes on Dev](../quotes-on-dev-screenshot.png "Quotes on Dev")
+![Screen Shot Quotes on Dev](/quotes-on-dev-screenshot.png "Quotes on Dev")
 
 
 # Quotes on Dev Starter

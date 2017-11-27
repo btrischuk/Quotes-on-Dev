@@ -20,16 +20,11 @@ input[type="submit"] {
 	height: 3rem;
 	margin: 3rem 0;
 
-	&:hover {
-		// border-color: pink;
-		// box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-	}
-
-	&:active,
-	&:focus {
-		// border-color: pink;
-		// box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-	}
+// 	&:active,
+// 	&:focus {
+		
+// 		box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+// 	}
 }
 
 /* Fields */
@@ -49,9 +44,6 @@ textarea {
 	width: 250px;	
 	@include tablet {
 		width: 500px;
-		// #quote-content textarea {
-		// 	width: 700px;
-		// }
 	}
 
 	&:focus {

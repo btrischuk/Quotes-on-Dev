@@ -8,7 +8,7 @@
 .blog, .page-template-default, .hfeed-site {
 	text-align: left;
 	background-color: $color__background-color;  
-	// padding: 2.5%;
+	padding: 2.5%;
 	a {
 		text-decoration: none;
 		font-family: $font__main;
@@ -91,7 +91,8 @@
 	}
 	.logo {
 		width: 700px;
-    margin: 0 auto;
+		margin: 0 auto;
+		margin-top: 7rem;
 	}
 	body {
 		width: 900px;

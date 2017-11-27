@@ -14,6 +14,7 @@
 					<div id="site-navigation" class="main-navigation" role="navigation">
 					
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						
 					</div>
 
 				<p class="footer-note-wrapper"><span class="footer-note">Brought to you by</span><a href="https://redacademy.com/">RED Academy</a></p>

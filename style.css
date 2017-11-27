@@ -1,7 +1,7 @@
 /*!
 Theme Name: Quotes on Dev Starter Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Breckon Trischuk
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 Version: 1.0.0
@@ -98,8 +98,8 @@ h1 {
   margin: 0.67em 0; }
 
 mark {
-  background: #ff0;
-  color: #000; }
+  background: yellow;
+  color: #222222; }
 
 small {
   font-size: 80%; }
@@ -258,10 +258,11 @@ input,
 select,
 textarea,
 p {
+  line-height: 1.5;
   color: #fff;
   font-family: Exo, sans-serif;
   font-size: 1rem;
-  line-height: 1.5; }
+  padding: 2.5%; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -294,8 +295,8 @@ pre {
   line-height: 1.6;
   margin-bottom: 1.6rem;
   max-width: 100%;
-  overflow: auto;
-  padding: 1.6rem; }
+  padding: 1.6rem;
+  overflow: auto; }
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
@@ -344,7 +345,7 @@ hr {
 ul, ol {
   margin: 0 0 1.5rem 3rem; }
 
-.wp-tag-cloud li a {
+.tag-cloud-link {
   font-size: 1.25rem; }
 
 ul {
@@ -362,7 +363,10 @@ ul {
     margin-bottom: 3px;
     font-family: Exo, sans-serif;
     font-weight: 100;
-    font-size: 1.25rem; }
+    font-size: 1rem; }
+    @media (min-width: 620px) {
+      ul li, ul a {
+        font-size: 1.25rem; } }
 
 ol {
   list-style: decimal; }
@@ -499,14 +503,14 @@ a {
       top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
+    .main-navigation ul ul {
+      left: -999rem;
+      top: 0; }
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul {
+      left: 100%; }
+    .main-navigation ul a {
+      width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -609,7 +613,8 @@ a {
 /* Posts and pages */
 .blog, .page-template-default, .hfeed-site {
   text-align: left;
-  background-color: #222222; }
+  background-color: #222222;
+  padding: 2.5%; }
   .blog a, .page-template-default a, .hfeed-site a {
     text-decoration: none;
     font-family: Exo, sans-serif;
@@ -670,7 +675,8 @@ a {
     color: #00cc00; }
   .logo {
     width: 700px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 7rem; }
   body {
     width: 900px;
     margin: 0 auto; }
@@ -699,12 +705,11 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-.page ul li a {
-  font-size: 1.25rem; }
-
 @media (min-width: 620px) {
   .site-content {
-    width: 100%; } }
+    width: 100%; }
+  .page ul li a {
+    font-size: 1.25rem !important; } }
 
 .blog .new-quote-button {
   background-color: transparent;
@@ -771,9 +776,13 @@ object {
   text-decoration: none;
   padding-right: 1rem; }
 
+.site-info {
+  margin-top: 3rem; }
+
 .footer-note-wrapper {
   display: inline-block;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 .footer-note {
   padding-right: .5rem;
@@ -784,6 +793,15 @@ object {
     width: 100%; }
   .page footer {
     margin-top: 4.5rem; } }
+
+@media (min-width: 1080px) {
+  footer .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
 
 .archive .site-content {
   padding: 2.5%; }

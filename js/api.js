@@ -55,10 +55,6 @@
         }
           
       }).done( function() {
-      
-        // var post = data.shift(); // The data is an array of posts. Grab the first one.
-        // $( '#quote-title' ).text( post.title.rendered );
-        // $( '#quote-content' ).html( post.content.rendered );
           
         // console.log(post);
       }).always(function() {
