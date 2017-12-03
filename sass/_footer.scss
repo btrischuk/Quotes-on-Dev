@@ -2,9 +2,6 @@
   .site-content, .footer-note-wrapper {
     text-align: left;
     margin-top: 0;
-    .footer-note {
-      padding-right: .3rem;
-    }
   }
   .site-footer{
     margin-top: 4rem;
@@ -17,20 +14,22 @@
     }
     li a {
       text-decoration: none;     
-      padding-right: 1rem;
     }
   }
 }
 
 .site-info {
   margin-top: 3rem;
-  
 }
 
 .footer-note-wrapper {
   display: inline-block;
   margin: 0;
   padding: 0;
+}
+
+footer ul li a {
+  padding-right: 0;
 }
 
 .footer-note {
@@ -51,5 +50,8 @@
   footer .site-info {
     display: flex;
     justify-content: flex-end;
+  }
+  .menu ul {
+    flex-wrap: nowrap;    
   }
 }

@@ -1,11 +1,11 @@
-![Screen Shot Quotes on Dev](/quotes-on-dev-screenshot.png "Quotes on Dev")
+![Screen Shot Quotes on Dev](../assets/quotes-on-dev-screenshot.png "Quotes on Dev")
 
 
 # Quotes on Dev Starter
 
 A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
 
-##Description
+## Description
 Quotes on Dev is a webpage that incorporates JavaScript and WordPress to pull information using the Wordpress REST API to generate quotes.
 
 ## The Process

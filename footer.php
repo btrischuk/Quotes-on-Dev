@@ -12,13 +12,13 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
 					<div id="site-navigation" class="main-navigation" role="navigation">
-					
+					<!-- <div class=testing> -->
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						
 					</div>
 
-				<p class="footer-note-wrapper"><span class="footer-note">Brought to you by</span><a href="https://redacademy.com/">RED Academy</a></p>
-			
+					<p class="footer-note-wrapper"><span class="footer-note">Brought to you by</span><a href="https://redacademy.com/">RED Academy</a></p>
+			<!-- </div> -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

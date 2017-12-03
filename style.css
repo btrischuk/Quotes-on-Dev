@@ -289,7 +289,7 @@ address {
   margin: 0 0 1.5rem; }
 
 pre {
-  background: #eee;
+  background: #ffffff;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: .9375rem;
   line-height: 1.6;
@@ -509,8 +509,6 @@ a {
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: 100%; }
-    .main-navigation ul a {
-      width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -681,7 +679,9 @@ a {
     width: 900px;
     margin: 0 auto; }
   .entry-content p {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .page p {
+    font-size: 1rem; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -759,8 +759,6 @@ object {
 .home .site-content, .home .footer-note-wrapper {
   text-align: left;
   margin-top: 0; }
-  .home .site-content .footer-note, .home .footer-note-wrapper .footer-note {
-    padding-right: .3rem; }
 
 .home .site-footer {
   margin-top: 4rem; }
@@ -773,8 +771,7 @@ object {
   padding: 0; }
 
 .home .menu li a {
-  text-decoration: none;
-  padding-right: 1rem; }
+  text-decoration: none; }
 
 .site-info {
   margin-top: 3rem; }
@@ -783,6 +780,9 @@ object {
   display: inline-block;
   margin: 0;
   padding: 0; }
+
+footer ul li a {
+  padding-right: 0; }
 
 .footer-note {
   padding-right: .5rem;
@@ -801,7 +801,10 @@ object {
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; } }
+            justify-content: flex-end; }
+  .menu ul {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
 
 .archive .site-content {
   padding: 2.5%; }

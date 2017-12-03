@@ -18,7 +18,7 @@ get_header(); ?>
 				</header>
       <?php endif; ?>
       
-      <p class="tag-display"><?php single_cat_title( "category: "); ?></p>
+      <p class="tag-display"><?php single_cat_title( "Category: "); ?></p>
       
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

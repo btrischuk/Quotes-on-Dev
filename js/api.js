@@ -1,6 +1,5 @@
 (function($) {
 
-
   $( '.new-quote-button' ).on( 'click', function (e) {
     e.preventDefault();
      
@@ -12,11 +11,16 @@
 
       var slug = data[0].slug;
       var post = data.shift(); // The data is an array of posts. Grab the first one.
+      
+      var postUrl = homeUrl + '/' + slug; 
+      var homeUrl = api_vars.home_url; 
+      history.pushState(null, null, postUrl);
             
       $( '#quote-title' ).text( post.title.rendered );
       $( '#quote-content' ).html( post.content.rendered );
           
-      $( '.hentry' ).append( history.pushState(null, null, slug) );
+      $( '.hentry' ).append();
+      history.pushState(null, null, slug);
 
       if (data._qod_quote_source){
         $('.source').html('<a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>');
@@ -24,7 +28,6 @@
           
     }).fail(function() {
       return 'The submission can not be processed. Try harder next time!';
-          
     });
   });
       
@@ -47,18 +50,19 @@
           content: quoteContent,
           _qod_quote_source: quoteSource,
           _qod_quote_source_url: quoteSourceUrl,
-          status: 'publish'
+          status: 'draft'
         },
           
         beforeSend: function(xhr) {
           xhr.setRequestHeader( 'X-WP-Nonce', api_vars.nonce );
         }
           
-      }).done( function() {
-          
-        // console.log(post);
+      }).done( function() {        
+        $('.logo').append(alert('Great success!')); //append to element 
       }).always(function() {
         $('#quote-submission-form').trigger('reset');
+      }).fail(function() {
+        $('body').append(alert ('Something esploded'));
       });
 
   }); // end of $( '#submit-quote-button' ).on( 'click'
