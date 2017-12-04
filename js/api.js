@@ -67,5 +67,5 @@
 
   }); // end of $( '#submit-quote-button' ).on( 'click'
 
-
+  
 })(jQuery);
