@@ -58,11 +58,11 @@
         }
           
       }).done( function() {        
-        $('.logo').append(alert('Great success!')); //append to element 
+        $('.hentry').append('Great success!'); //append to element 
       }).always(function() {
         $('#quote-submission-form').trigger('reset');
       }).fail(function() {
-        $('body').append(alert ('Something esploded'));
+        $('.hentry').append('Something esploded');
       });
 
   }); // end of $( '#submit-quote-button' ).on( 'click'
