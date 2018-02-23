@@ -17,7 +17,7 @@
 						
 					</div>
 
-					<p class="footer-note-wrapper"><span class="footer-note">Brought to you by</span><a href="https://redacademy.com/">RED Academy</a></p>
+					<p class="footer-note-wrapper"><span class="footer-note">Brought to you by</span><a href="https://github.com/btrischuk">Breckon Trischuk</a></p>
 			<!-- </div> -->
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
